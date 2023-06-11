@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_innovainfosys_towhid_hasam/utils/styles.dart';
 import 'package:get/get.dart';
 
+import '../route/route.dart';
+
 class UsagesPage extends StatelessWidget {
   const UsagesPage({super.key});
 
@@ -85,26 +87,122 @@ class UsagesPage extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text("250",
-                            style: Style.regular_white_12
-                            ,),
-                          SizedBox(width: 10,),
-                          SizedBox(
-                            width: Get.width*.82,
-                            child: Container(
-                              height: 2,
-                              decoration: BoxDecoration(
-                                color: Color(0xFFCDCDCD),
-                              ),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          image: DecorationImage(image: AssetImage("assets/images/img.png",
+                          ),
+                        ),),
+                        child: Column(
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("250",
+                                  style: Style.regular_white_12
+                                  ,),
+                                SizedBox(width: 10,),
+                                SizedBox(
+                                  width: Get.width*.82,
+                                  child: Container(
+                                    height: 2,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFCDCDCD),
+                                    ),
+                                  ),
+                                )
+
+
+                              ],
                             ),
-                          )
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("150",
+                                  style: Style.regular_white_12
+                                  ,),
+                                SizedBox(width: 10,),
+                                SizedBox(
+                                  width: Get.width*.82,
+                                  child: Container(
+                                    height: 2,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFCDCDCD),
+                                    ),
+                                  ),
+                                )
 
 
-                        ],
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("100",
+                                  style: Style.regular_white_12
+                                  ,),
+                                SizedBox(width: 10,),
+                                SizedBox(
+                                  width: Get.width*.82,
+                                  child: Container(
+                                    height: 2,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFCDCDCD),
+                                    ),
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("  50",
+                                  style: Style.regular_white_12
+                                  ,
+
+                                ),
+                                SizedBox(width: 10,),
+                                SizedBox(
+                                  width: Get.width*.82,
+                                  child: Container(
+                                    height: 2,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFCDCDCD),
+                                    ),
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Text("     0",
+                                  style: Style.regular_white_12
+                                  ,),
+                                SizedBox(width: 10,),
+                                SizedBox(
+                                  width: Get.width*.82,
+                                  child: Container(
+                                    height: 2,
+                                    decoration: BoxDecoration(
+                                      color: Color(0xFFCDCDCD),
+                                    ),
+                                  ),
+                                )
+
+
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     Row(
@@ -622,93 +720,104 @@ class UsagesPage extends StatelessWidget {
                 child:Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.homePage);
+                      },
+                      child: Container(
+                        height:56,
+                        width: 68,
 
 
-                      width: 121,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
-
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
-
-                        ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
-
-
-                          Image.asset( "assets/images/home_icon.png",
-                            height: 24,
-                            width: 24,),
-                          const SizedBox(width: 10,),
-                          const Text("Home",
                           ),
+                          color:const Color(0xFFFFFFFF),
+                        ),
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
-                        ],
+
+                            Image.asset( "assets/images/home_icon.png",
+                              height: 24,
+                              width: 24,),
+
+
+
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.smartPage);
+                      },
+                      child: Container(
+                        height:56,
+                        width: 68,
 
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
-                      width: 68,
-
-
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
-
+                          ),
+                          color:const Color(0xFFFFFFFF),
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
 
-                          Image.asset( "assets/images/net_icon.png",
-                            height: 24,
-                            width: 24,),
+                            Image.asset( "assets/images/net_icon.png",
+                              height: 24,
+                              width: 24,),
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.usagesPage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                      width: 68,
+                        width: 121,
 
 
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
+                          ),
+                          color:const Color(0xFFFFFFFF),
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
 
-                          Image.asset( "assets/images/pie_icon.png",
-                            height: 24,
-                            width: 24,),
+                            Image.asset( "assets/images/pie_icon.png",
+                              height: 24,
+                              width: 24,),
+                        const SizedBox(width: 10,),
+                        const Text("Usage",)
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                     Container(

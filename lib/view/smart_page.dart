@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_innovainfosys_towhid_hasam/utils/styles.dart';
 import 'package:get/get.dart';
 
+import '../route/route.dart';
+
 class SmartPage extends StatelessWidget {
   const SmartPage({super.key});
 
@@ -747,93 +749,109 @@ class SmartPage extends StatelessWidget {
                 child:Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.homePage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                      width: 121,
+                        width: 68,
 
 
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
-                        ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
-
-
-                          Image.asset( "assets/images/home_icon.png",
-                            height: 24,
-                            width: 24,),
-                          const SizedBox(width: 10,),
-                          const Text("Home",
                           ),
+                          color:const Color(0xFFFFFFFF),
+                        ),
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
-                        ],
+
+                            Image.asset( "assets/images/home_icon.png",
+                              height: 24,
+                              width: 24,),
+
+
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.smartPage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                      width: 68,
+                        width: 121,
 
 
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
+                          ),
+                          color:const Color(0xFFFFFFFF),
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
 
-                          Image.asset( "assets/images/net_icon.png",
-                            height: 24,
-                            width: 24,),
+                            Image.asset( "assets/images/net_icon.png",
+                              height: 24,
+                              width: 24,),
+                            const SizedBox(width: 10,),
+                            const Text("Smart",
+                            ),
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.usagesPage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                      width: 68,
+                        width: 68,
 
 
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
 
+                          ),
+                          color:const Color(0xFFFFFFFF),
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
 
-                          Image.asset( "assets/images/pie_icon.png",
-                            height: 24,
-                            width: 24,),
+                            Image.asset( "assets/images/pie_icon.png",
+                              height: 24,
+                              width: 24,),
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                     Container(

@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../route/route.dart';
 import '../utils/styles.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget {
             children: [
               const SizedBox(height: 25,),
               Container(
+              width: Get.width,
                 decoration: const BoxDecoration(
                   color:  Color(0xFF4C7380),
                   borderRadius: BorderRadius.only(
@@ -580,73 +582,78 @@ class HomePage extends StatelessWidget {
                           ],
                         )
                     ),
-                    Container(
-                        width: Get.width*.38,
-                        height: Get.height*.16,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color:const Color(0xFF9A7265),
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.lampPage);
+                      },
+                      child: Container(
+                          width: Get.width*.38,
+                          height: Get.height*.16,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color:const Color(0xFF9A7265),
 
-                        ),
+                          ),
 
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
 
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 10.0),
-                                  child: Image.asset("assets/images/lamp.png",
-                                    height: 50,
-                                    width: 50,),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(right: 10.0),
-                                  child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.end,
-                                    crossAxisAlignment: CrossAxisAlignment.end,
-                                    children: [
-                                      Text("Color",
-                                          style: Style.regular_white_12),
-                                      Text("White",
-                                        style: Style.semiBold_white_18,),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                            const SizedBox(
-                              height: 10,
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 10.0,right: 10),
-                              child: Row(
+                              Row(
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.end,
                                 children: [
-                                  Column(
-                                    mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text("AC",
-                                          style:Style.semiBold_white_18),
-                                      Text("Living room",
-                                          style:Style.regular_white_12),
-                                    ],
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 10.0),
+                                    child: Image.asset("assets/images/lamp.png",
+                                      height: 50,
+                                      width: 50,),
                                   ),
-                                  Image.asset("assets/images/off_iocn.png",
-                                    height: 24,
-                                    width: 55,),
-
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 10.0),
+                                    child: Column(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      crossAxisAlignment: CrossAxisAlignment.end,
+                                      children: [
+                                        Text("Color",
+                                            style: Style.regular_white_12),
+                                        Text("White",
+                                          style: Style.semiBold_white_18,),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
-                            ),
+                              const SizedBox(
+                                height: 10,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 10.0,right: 10),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Column(
+                                      mainAxisAlignment: MainAxisAlignment.start,
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Lamp",
+                                            style:Style.semiBold_white_18),
+                                        Text("Living room",
+                                            style:Style.regular_white_12),
+                                      ],
+                                    ),
+                                    Image.asset("assets/images/off_iocn.png",
+                                      height: 24,
+                                      width: 55,),
 
-                          ],
-                        )
+                                  ],
+                                ),
+                              ),
+
+                            ],
+                          )
+                      ),
                     ),
 
                   ],
@@ -678,93 +685,108 @@ class HomePage extends StatelessWidget {
                 child:Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height:56,
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.homePage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                      width: 121,
+                        width: 121,
 
 
-                      decoration: BoxDecoration(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(8
+
+                            ),
+                          color:const Color(0xFFFFFFFF),
+                        ),
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
+
+
+                            Image.asset( "assets/images/home_icon.png",
+                              height: 24,
+                              width: 24,),
+                            const SizedBox(width: 10,),
+                            const Text("Home",
+                            ),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.smartPage);
+                      },
+                      child: Container(
+                        height:56,
+
+
+                        width: 68,
+
+
+                        decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8
 
                           ),
-                        color:const Color(0xFFFFFFFF),
+                          color:const Color(0xFFFFFFFF),
+                        ),
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
+
+
+                            Image.asset( "assets/images/net_icon.png",
+                              height: 24,
+                              width: 24,),
+
+
+                          ],
+                        ),
                       ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                    ),
+                    GestureDetector(
+                      onTap: (){
+                        Get.toNamed(Routes.usagesPage);
+                      },
+                      child: Container(
+                        height:56,
 
 
-                          Image.asset( "assets/images/home_icon.png",
-                            height: 24,
-                            width: 24,),
-                          const SizedBox(width: 10,),
-                          const Text("Home",
+                        width: 68,
+
+
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8
+
                           ),
-
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height:56,
-
-
-                      width: 68,
-
-
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
-
+                          color:const Color(0xFFFFFFFF),
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.center,
+                          crossAxisAlignment:
+                          CrossAxisAlignment.center,
+                          children: [
 
 
-                          Image.asset( "assets/images/net_icon.png",
-                            height: 24,
-                            width: 24,),
+                            Image.asset( "assets/images/pie_icon.png",
+                              height: 24,
+                              width: 24,),
 
 
-                        ],
-                      ),
-                    ),
-                    Container(
-                      height:56,
-
-
-                      width: 68,
-
-
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8
-
+                          ],
                         ),
-                        color:const Color(0xFFFFFFFF),
-                      ),
-                      child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.center,
-                        crossAxisAlignment:
-                        CrossAxisAlignment.center,
-                        children: [
-
-
-                          Image.asset( "assets/images/pie_icon.png",
-                            height: 24,
-                            width: 24,),
-
-
-                        ],
                       ),
                     ),
                     Container(
