@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_innovainfosys_towhid_hasam/utils/styles.dart';
 import 'package:get/get.dart';
 
-class SecondPage extends StatelessWidget {
-  const SecondPage({super.key});
+class LampPage extends StatelessWidget {
+  const LampPage({super.key});
 
 
 

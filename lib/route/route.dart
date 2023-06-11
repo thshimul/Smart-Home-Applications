@@ -1,12 +1,16 @@
-import 'package:flutter_innovainfosys_towhid_hasam/view/second_page.dart';
+import 'package:flutter_innovainfosys_towhid_hasam/view/lamp_page.dart';
+import 'package:flutter_innovainfosys_towhid_hasam/view/smart_page.dart';
+import 'package:flutter_innovainfosys_towhid_hasam/view/usages.dart';
 import 'package:get/get.dart';
 
-import '../view/first_page.dart';
+import '../view/home_page.dart';
 
 
 abstract class Routes {
-  static const String firstPage = '/firstPage';
-  static const String secondPage = '/secondPage';
+  static const String homePage = '/homePage';
+  static const String lampPage = '/lampPage';
+  static const String smartPage = '/smartPage';
+  static const String usagesPage = '/usagesPage';
 }
 
 abstract class AppPages {
@@ -15,12 +19,20 @@ abstract class AppPages {
   static final routes = [
 
     GetPage(
-      name: Routes.firstPage,
-      page: () => const FirstPage(),
+      name: Routes.homePage,
+      page: () => const HomePage(),
     ),
     GetPage(
-      name: Routes.secondPage,
-      page: () => const SecondPage(),
+      name: Routes.lampPage,
+      page: () => const LampPage(),
+    ),
+    GetPage(
+      name: Routes.smartPage,
+      page: () => const SmartPage(),
+    ),
+    GetPage(
+      name: Routes.usagesPage,
+      page: () => const UsagesPage(),
     ),
   ];
 }

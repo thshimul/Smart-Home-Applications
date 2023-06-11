@@ -4,8 +4,8 @@ import 'package:get/get.dart';
 
 import '../utils/styles.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
 
 

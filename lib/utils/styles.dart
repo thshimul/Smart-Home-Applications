@@ -74,6 +74,20 @@ class Style {
     fontSize: 12,
 
   );
+  static TextStyle regular_9A7265_12 = const TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF9A7265),
+    fontSize: 12,
+
+  );
+  static TextStyle regular_659A6E_12 = const TextStyle(
+    fontFamily: 'Poppins',
+    fontWeight: FontWeight.w400,
+    color: Color(0xFF659A6E),
+    fontSize: 12,
+
+  );
   static TextStyle semiBold_dimBlack_18 = const TextStyle(
     fontFamily: 'Poppins',
     fontWeight: FontWeight.w600,
