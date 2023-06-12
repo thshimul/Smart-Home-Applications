@@ -34,7 +34,7 @@ class LampPage extends StatelessWidget {
                   ),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.only(left: 20.0,right: 20),
+                  padding: const EdgeInsets.only(left: 20.0,right: 20,top: 10),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,23 +51,25 @@ class LampPage extends StatelessWidget {
                                 onTap: (){
                                   Get.toNamed(Routes.homePage);
                                 },
-                                child: Row(
+                                child: Container(
+                                  child: Row(
 
-                                  children: [
-                                    const Padding(
-                                      padding: EdgeInsets.only(top: 40),
-                                      child: Icon(Icons.arrow_back_ios,
-                                        color: Colors.white,
-                                        size: 12,),
-                                    ),
-                                    Padding(
+                                    children: [
+                                      const Padding(
+                                        padding: EdgeInsets.only(top: 40),
+                                        child: Icon(Icons.arrow_back_ios,
+                                          color: Colors.white,
+                                          size: 12,),
+                                      ),
+                                      Padding(
 
-                                      padding: const EdgeInsets.only(top: 40,left: 10),
-                                      child: Text("Back",
-                                        style: Style.regular_white_12
-                                        ,),
-                                    ),
-                                  ],
+                                        padding: const EdgeInsets.only(top: 40),
+                                        child: Text("Back",
+                                          style: Style.regular_white_12
+                                          ,),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                               Padding(
@@ -395,151 +397,7 @@ class LampPage extends StatelessWidget {
             ],
           ),
         ),
-        bottomNavigationBar:BottomAppBar(
-          elevation: 0,
-          child: Container(
-            height:
-            Get.height*.11,
-
-            width:Get
-                .width,
-
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.only(
-                topRight: Radius.circular(16),topLeft:  Radius.circular(16),
-
-              ),
-              color:Color(0xFF4C7380),
-            ),
-            child: Center(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20.0,right: 20),
-                  child:Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Container(
-                        height:56,
-
-
-                        width: 121,
-
-
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8
-
-                          ),
-                          color:const Color(0xFFFFFFFF),
-                        ),
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          crossAxisAlignment:
-                          CrossAxisAlignment.center,
-                          children: [
-
-
-                            Image.asset( "assets/images/home_icon.png",
-                              height: 24,
-                              width: 24,),
-                            const SizedBox(width: 10,),
-                            const Text("Home",
-                            ),
-
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height:56,
-
-
-                        width: 68,
-
-
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8
-
-                          ),
-                          color:const Color(0xFFFFFFFF),
-                        ),
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          crossAxisAlignment:
-                          CrossAxisAlignment.center,
-                          children: [
-
-
-                            Image.asset( "assets/images/net_icon.png",
-                              height: 24,
-                              width: 24,),
-
-
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height:56,
-
-
-                        width: 68,
-
-
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8
-
-                          ),
-                          color:const Color(0xFFFFFFFF),
-                        ),
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          crossAxisAlignment:
-                          CrossAxisAlignment.center,
-                          children: [
-
-
-                            Image.asset( "assets/images/pie_icon.png",
-                              height: 24,
-                              width: 24,),
-
-
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height:56,
-
-
-                        width: 68,
-
-
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8
-
-                          ),
-                          color:const Color(0xFFFFFFFF),
-                        ),
-                        child: Row(
-                          mainAxisAlignment:
-                          MainAxisAlignment.center,
-                          crossAxisAlignment:
-                          CrossAxisAlignment.center,
-                          children: [
-
-
-                            Image.asset( "assets/images/user_icon.png",
-                              height: 24,
-                              width: 24,),
-
-
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                )),
-          ),
-        ),// Column
+        // Column
       ),
     );
 

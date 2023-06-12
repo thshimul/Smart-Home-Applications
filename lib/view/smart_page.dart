@@ -29,7 +29,7 @@ class SmartPage extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(left: 20.0,right: 20),
+                padding: const EdgeInsets.only(left: 20.0,right: 20,top: 10),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -757,7 +757,7 @@ class SmartPage extends StatelessWidget {
                         height:56,
 
 
-                        width: 68,
+                        width: 55,
 
 
                         decoration: BoxDecoration(
@@ -791,7 +791,7 @@ class SmartPage extends StatelessWidget {
                         height:56,
 
 
-                        width: 121,
+                        width: 110,
 
 
                         decoration: BoxDecoration(
@@ -828,7 +828,7 @@ class SmartPage extends StatelessWidget {
                         height:56,
 
 
-                        width: 68,
+                        width: 55,
 
 
                         decoration: BoxDecoration(
@@ -858,7 +858,7 @@ class SmartPage extends StatelessWidget {
                       height:56,
 
 
-                      width: 68,
+                      width: 55,
 
 
                       decoration: BoxDecoration(

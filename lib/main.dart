@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       useInheritedMediaQuery: true,
       title: "App",
-      initialRoute: Routes.homePage,
+      initialRoute: AppPages.initial,
       getPages:AppPages.routes,
       theme: ThemeData(
         primarySwatch: Colors.blue,

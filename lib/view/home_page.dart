@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 25,),
+
               Container(
               width: Get.width,
                 decoration: const BoxDecoration(
@@ -38,6 +38,7 @@ class HomePage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      const SizedBox(height: 35,),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -120,7 +121,7 @@ class HomePage extends StatelessWidget {
                                   ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 20.0,right: 20),
+                                  padding: const EdgeInsets.only(left: 10.0,right: 10),
                                   child: Row(
                                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                     children: [
@@ -693,7 +694,7 @@ class HomePage extends StatelessWidget {
                         height:56,
 
 
-                        width: 121,
+                        width: 110,
 
 
                         decoration: BoxDecoration(
@@ -729,7 +730,7 @@ class HomePage extends StatelessWidget {
                         height:56,
 
 
-                        width: 68,
+                        width: 55,
 
 
                         decoration: BoxDecoration(
@@ -763,7 +764,7 @@ class HomePage extends StatelessWidget {
                         height:56,
 
 
-                        width: 68,
+                        width: 55,
 
 
                         decoration: BoxDecoration(
@@ -793,7 +794,7 @@ class HomePage extends StatelessWidget {
                       height:56,
 
 
-                      width: 68,
+                      width: 55,
 
 
                       decoration: BoxDecoration(

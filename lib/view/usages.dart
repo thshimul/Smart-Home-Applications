@@ -29,7 +29,7 @@ class UsagesPage extends StatelessWidget {
                 ),
               ),
               child: Padding(
-                padding: const EdgeInsets.only(left: 20.0,right: 20),
+                padding: const EdgeInsets.only(left: 20.0,right: 20,top: 10),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -88,9 +88,13 @@ class UsagesPage extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
                       child: Container(
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           image: DecorationImage(image: AssetImage("assets/images/img.png",
+
                           ),
+                              scale:.7,
+
+
                         ),),
                         child: Column(
                           children: [
@@ -101,12 +105,12 @@ class UsagesPage extends StatelessWidget {
                                 Text("250",
                                   style: Style.regular_white_12
                                   ,),
-                                SizedBox(width: 10,),
+                                const SizedBox(width: 10,),
                                 SizedBox(
                                   width: Get.width*.82,
                                   child: Container(
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDCDCD),
                                     ),
                                   ),
@@ -122,12 +126,12 @@ class UsagesPage extends StatelessWidget {
                                 Text("150",
                                   style: Style.regular_white_12
                                   ,),
-                                SizedBox(width: 10,),
+                                const SizedBox(width: 10,),
                                 SizedBox(
                                   width: Get.width*.82,
                                   child: Container(
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDCDCD),
                                     ),
                                   ),
@@ -143,12 +147,12 @@ class UsagesPage extends StatelessWidget {
                                 Text("100",
                                   style: Style.regular_white_12
                                   ,),
-                                SizedBox(width: 10,),
+                                const SizedBox(width: 10,),
                                 SizedBox(
                                   width: Get.width*.82,
                                   child: Container(
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDCDCD),
                                     ),
                                   ),
@@ -166,12 +170,12 @@ class UsagesPage extends StatelessWidget {
                                   ,
 
                                 ),
-                                SizedBox(width: 10,),
+                                const SizedBox(width: 10,),
                                 SizedBox(
                                   width: Get.width*.82,
                                   child: Container(
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDCDCD),
                                     ),
                                   ),
@@ -187,12 +191,12 @@ class UsagesPage extends StatelessWidget {
                                 Text("     0",
                                   style: Style.regular_white_12
                                   ,),
-                                SizedBox(width: 10,),
+                                const SizedBox(width: 10,),
                                 SizedBox(
                                   width: Get.width*.82,
                                   child: Container(
                                     height: 2,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color(0xFFCDCDCD),
                                     ),
                                   ),
@@ -310,7 +314,7 @@ class UsagesPage extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Color(0xFFFFFFFF)
                               ),
@@ -321,7 +325,7 @@ class UsagesPage extends StatelessWidget {
                                   width: 40,),
                               ),
                             ),
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -410,7 +414,7 @@ class UsagesPage extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Color(0xFFFFFFFF)
                               ),
@@ -421,7 +425,7 @@ class UsagesPage extends StatelessWidget {
                                   width: 40,),
                               ),
                             ),
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -510,7 +514,7 @@ class UsagesPage extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Color(0xFFFFFFFF)
                               ),
@@ -521,7 +525,7 @@ class UsagesPage extends StatelessWidget {
                                   width: 40,),
                               ),
                             ),
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -610,7 +614,7 @@ class UsagesPage extends StatelessWidget {
                         Row(
                           children: [
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                   shape: BoxShape.circle,
                                   color: Color(0xFFFFFFFF)
                               ),
@@ -621,7 +625,7 @@ class UsagesPage extends StatelessWidget {
                                   width: 40,),
                               ),
                             ),
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -726,7 +730,7 @@ class UsagesPage extends StatelessWidget {
                       },
                       child: Container(
                         height:56,
-                        width: 68,
+                        width: 55,
 
 
                         decoration: BoxDecoration(
@@ -759,7 +763,7 @@ class UsagesPage extends StatelessWidget {
                       },
                       child: Container(
                         height:56,
-                        width: 68,
+                        width: 55,
 
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8
@@ -792,7 +796,7 @@ class UsagesPage extends StatelessWidget {
                         height:56,
 
 
-                        width: 121,
+                        width: 110,
 
 
                         decoration: BoxDecoration(
@@ -824,7 +828,7 @@ class UsagesPage extends StatelessWidget {
                       height:56,
 
 
-                      width: 68,
+                      width: 55,
 
 
                       decoration: BoxDecoration(
